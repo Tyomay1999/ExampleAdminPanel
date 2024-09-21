@@ -1,0 +1,155 @@
+header {
+    width: 100%;
+    height: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F4EFEB;
+}
+
+.navigation {
+    margin: 83px 0 25px calc((100% - 980px)* 0.5);;
+    display: flex;
+}
+
+.navigation > li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.navigation, .navigation > li > a:hover {
+    transition: color .5s;
+    color: #f2b827;
+}
+
+.navigation > li > a {
+    font-family: Almoni, sans-serif;
+    font-size: 18px;
+    color: #574F4B;
+    text-align: right;
+    line-height: 50px;
+    transition: color .5s;
+}
+
+.logo_block {
+
+    margin: 44px 0 44px 40px;
+    display: flex;
+}
+
+.logo_block > .logo {
+    margin-right: 11px;
+    width: 54px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info > a {
+    color: #574F4B;
+}
+
+.info > a:first-child {
+    font-family: "Open Sans Hebrew Condensed", sans-serif;
+    font-size: 37px;
+    direction: rtl;
+}
+
+.info > a:last-child {
+    direction: rtl;
+    font-family: "Open Sans Hebrew Condensed", cursive;
+    /*font-size: 44px;*/
+}
+
+
+.head {
+    width: 100%;
+    height: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2b827;
+}
+
+
+.head:has(.vts_head){
+    flex-direction: column;
+    min-height: 123px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.head:has(.cognitive_method_head, .cognitive_method_head_s){
+    flex-direction: column;
+}
+
+
+.head > .lecture_head  {
+    font-size: 42px;
+    font-family: Almoni, sans-serif;
+    font-weight: 100;
+    color: #574f4b;
+    text-align: center;
+}
+
+.head > .vts_head {
+    font-family: Barlow, sans-serif;
+    font-size: 24px;
+    line-height: 0.9em;
+    text-align: center;
+    letter-spacing: normal;
+    color: #574F4B;
+    font-weight: 600;
+}
+
+.head > .vts_head > span {
+    font-size: 43px;
+    margin-right: 5px;
+}
+
+.head > .vts_par {
+    margin-top: 10px;
+    color: #574F4B;
+    font-family: Almoni, sans-serif;
+    font-size: 23px;
+    line-height: 1.6em;
+    text-align: center;
+    letter-spacing: normal;
+    direction: rtl;
+}
+
+
+.head > .cognitive_method_head,
+.head > .cognitive_method_head_s {
+    direction: rtl;
+    font-family: Almoni, sans-serif;
+    font-size: 43px;
+    color: #574f4b;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.head > .cognitive_method_head_s{
+    color: #414141;
+    font-size: 38px;
+}
+
+.head > .cognitive_method_par,
+.head > .cognitive_method_par_s {
+    font-family: Almoni, sans-serif;
+    font-size: 24px;
+    direction: rtl;
+    color: #574f4b;
+    font-weight: 400;
+}
+
+.head > .cognitive_method_par_s {
+    color: #414141;
+}

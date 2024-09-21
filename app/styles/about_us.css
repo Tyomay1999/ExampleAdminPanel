@@ -1,0 +1,99 @@
+.about_us_container {
+    width: 100%;
+    display: flex;
+    padding-bottom: 35px;
+}
+
+.about_us_container > .info_box,
+.about_us_container > .image_box {
+    position: relative;
+    width: 50%;
+}
+
+.about_us_container > .image_box > img {
+    position: relative;
+    z-index: 2;
+    width: 341px;
+    height: 512px;
+    object-fit: cover;
+}
+
+.about_us_container > .image_box > .back_fon {
+    width: 411px;
+    height: 352px;
+    background: #D8C7BD;
+    position: absolute;
+    left: 0;
+    top: 200px;
+}
+
+.about_us_container > .info_box {
+    direction: rtl;
+    padding-left: 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about_us_container > .info_box > .head_line {
+    max-width: 490px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 60px 30px 40px;
+    height: 131px;
+    background: #9E928B;
+}
+
+.about_us_container > .info_box > .head_line > h1 {
+    font-family: Almoni, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #FFFFFF;
+}
+
+
+.about_us_container > .info_box > .content_info {
+    margin: 20px 60px 0 0;
+    max-width: 396px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_us_container > .info_box > .content_info > p {
+    font-family: Almoni, sans-serif;
+    font-size: 17px;
+    line-height: 1.4em;
+    text-align: justify;
+    letter-spacing: normal;
+    color: #574f4b;
+}
+
+.about_us_container > .info_box > .content_info > p > span,
+.about_us_container > .info_box > .content_info > p > a {
+    color: #943814;
+}
+
+.about_us_container > .info_box > .content_info > p > a {
+    text-decoration: underline;
+}
+
+.about_us_container > .info_box > .content_info > div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about_us_container > .info_box > .content_info > div > a {
+    width: 167px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: Almoni, sans-serif;
+    color: #574f4b;
+    background: #D8C7BD;
+}

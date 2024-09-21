@@ -1,0 +1,110 @@
+@import "about_us.css";
+@import "skills.css";
+@import "more_info.css";
+
+.greeting_container {
+    width: 100%;
+    display: flex;
+    background: #FFFFFF;
+}
+
+
+.greeting_container > .image_box,
+.greeting_container > .info_container {
+    width: 50%;
+}
+
+.greeting_container > .image_box{
+    background-image: url('../assets/dice_backgroun.webp'); /* Replace this with your local image path or a hosted image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: 50% 50%;*/
+    width: 50%;
+}
+
+.greeting_container > .info_container {
+    direction: rtl;
+    padding: 100px 80px 60px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting_container > .info_container > .info_box {
+    max-width: 490px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.greeting_container > .info_container > .info_box > h1 {
+    font-family: Almoni, sans-serif;
+    font-size: 34px;
+    text-align: justify;
+    color: #574f4b;
+    font-weight: 200;
+    letter-spacing: -0.05em;
+    line-height: 1.4em;
+}
+
+.greeting_container > .info_container > .info_box > h2 {
+    font-family: Almoni, sans-serif;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-align: justify;
+    letter-spacing: -0.05em;
+    color: #574f4b;
+    font-weight: 400;
+}
+
+.greeting_container > .info_container > .info_box > .quotes {
+    width: 28px;
+    height: 20px;
+    object-fit: cover;
+    transform: rotateY(180deg) rotateX(180deg);
+}
+
+.greeting_container > .info_container > .info_box > p {
+    font-family: Almoni, sans-serif;
+    font-size: 20px;
+    line-height: 1.2em;
+    text-align: justify;
+    letter-spacing: -0.05em;
+    color: #574f4b;
+}
+
+.greeting_container > .info_container > .info_box > div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.greeting_container > .info_container > .info_box > div > a {
+    direction: rtl;
+    text-decoration: none;
+    cursor: pointer;
+    background: #D8C7BD;
+    border: none;
+    outline: none;
+    color: #574f4b;
+    font-family: Almoni, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 15px 25px;
+}
+
+.greeting_container > .info_container > .info_box > div > a:hover {
+    background: #f2b827;
+    color: #FFFFFF;
+}
+
+.catchphrase{
+    margin: 50px 0;
+    color: #574f4b;
+    font-family: Almoni, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}

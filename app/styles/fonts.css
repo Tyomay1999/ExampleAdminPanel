@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: "Adler";
+    src: url('../fonts/Adler.ttf');
+}
+
+@font-face {
+    font-family: "Barlow-Medium";
+    src: url('../fonts/Barlow-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url('../fonts/Barlow-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Almoni";
+    src: url('../fonts/almoni-dl-aaa-400.ttf');
+}
+
+@font-face {
+    font-family: "Open Sans Hebrew Condensed";
+    src: url('../fonts/OpenSansHebrewCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Forum";
+    src: url('../fonts/Forum-Regular.ttf');
+}

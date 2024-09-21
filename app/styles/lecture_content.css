@@ -1,0 +1,86 @@
+.content_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 70px 70px 15px 70px;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 80px - 80px);
+    /*min-height: 100vh;*/
+    background: white;
+}
+
+/*TODO check info_block class name issue*/
+.text_block, .info_block {
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_block > .box {
+    /*margin: 10px 0;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 100px;
+}
+
+.text_block > .box > h5 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #F2B827;
+    font-size: 17px;
+    font-family: Almoni, sans-serif;
+}
+
+.text_block > .box > p {
+    direction: rtl;
+    text-align: justify;
+    font-size: 17px;
+    font-family: "Almoni", sans-serif;
+    color: #414141;
+    letter-spacing: normal;
+    line-height: 25px;
+    font-weight: 100;
+}
+
+.text_block > .box > p > span {
+    color: #414141;
+    font-weight: bold;
+}
+
+.info_block  {
+    margin-left: 40px;
+    padding-top: 40px;
+}
+
+.info_block > .image_background {
+    position: relative;
+    width: 404px;
+    height: 460px;
+    background: #574F4B;
+}
+
+.info_block > .image_background > img {
+    position: absolute;
+    top: -40px;
+    left: calc((100% - 332px) / 2);
+    width: 332px;
+    height: 469px;
+    object-fit: cover;
+}
+
+.info_block > .email, .info_block > .phone {
+    text-align: right;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: Almoni, sans-serif;
+    color: #414141;
+}
+.info_block > .phone {
+    font-size: 33px;
+}
