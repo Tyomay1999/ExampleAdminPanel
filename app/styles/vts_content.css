@@ -1,4 +1,4 @@
-.vts_content_container{
+.vts_content_container {
     width: 100%;
     /*height: 100vh;*/
     background: #FFFFFF;
@@ -43,4 +43,17 @@
     letter-spacing: normal;
     line-height: 1.4em;
     color: #414141;
+}
+
+
+@media screen and (max-width: 560px) {
+    .vts_content_container > .vts_content {
+        width: 867px;
+        display: flex;
+        align-items: normal;
+    }
+
+    .vts_content_container > .vts_content > h1 {
+        text-align: center;
+    }
 }

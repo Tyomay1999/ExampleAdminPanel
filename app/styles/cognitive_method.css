@@ -94,3 +94,40 @@
     text-align: center;
     letter-spacing: normal;
 }
+
+@media screen and (max-width: 560px) {
+    .cognitive_method_container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background: #F4EFEB;
+    }
+
+    .cognitive_method_content {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .cognitive_method_wrapper {
+        padding: 25px 20px 0 20px;
+        width: 100%;
+        background: #FFFFFF;
+    }
+
+    .cognitive_method_content > .image_box{
+        position: relative;
+        width: 255px;
+        height: 255px;
+        object-position: 50% 50%;
+    }
+
+    .cognitive_method_content > .image_box > .back_fon {
+        position: absolute;
+        width: 509px;
+        height: 450px;
+        left: 0;
+        bottom: -40px;
+        background: #F4EFEB;
+    }
+
+}

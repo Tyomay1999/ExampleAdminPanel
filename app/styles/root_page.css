@@ -108,3 +108,10 @@
     font-weight: 400;
     text-align: center;
 }
+
+@media screen and (max-width: 560px) {
+    .greeting_container {
+        display: flex;
+        flex-direction: column;
+    }
+}

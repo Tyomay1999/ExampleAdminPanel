@@ -153,3 +153,20 @@ header {
 .head > .cognitive_method_par_s {
     color: #414141;
 }
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
+    .head {
+        height: 64px;
+    }
+    .head > .lecture_head  {
+        font-size: 24px;
+        font-family: Almoni, sans-serif;
+        font-weight: 100;
+        color: #574f4b;
+        text-align: center;
+    }
+}

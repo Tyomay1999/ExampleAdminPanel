@@ -117,3 +117,16 @@ footer > .contact_block > button {
     font-family: Almoni, sans-serif;
     color: #353131;
 }
+
+
+
+@media screen and (max-width: 560px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer > .navigation_block > ul,
+    footer > .navigation_block > hr{
+        display: none;
+    }
+}

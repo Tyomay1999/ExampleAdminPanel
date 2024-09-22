@@ -53,7 +53,7 @@
     font-weight: bold;
 }
 
-.info_block  {
+.info_block {
     margin-left: 40px;
     padding-top: 40px;
 }
@@ -72,6 +72,7 @@
     width: 332px;
     height: 469px;
     object-fit: cover;
+
 }
 
 .info_block > .email, .info_block > .phone {
@@ -81,6 +82,77 @@
     font-family: Almoni, sans-serif;
     color: #414141;
 }
+
 .info_block > .phone {
     font-size: 33px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        zoom: 154%;
+    }
+
+    .content {
+        padding: 25px 15px 70px 15px;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text_block {
+        padding-bottom: 30px;
+    }
+
+    .info_block {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .text_block > .box > h5 {
+        direction: rtl;
+        line-height: 25px;
+    }
+
+    .info_block > .image_background > img {
+        top: -30px;
+        left: calc((100% - 218px) / 2);
+
+        width: 218px;
+        height: 327px;
+    }
+
+    .info_block > .image_background {
+        width: 280px;
+        height: 327px;
+        margin-bottom: 10px;
+    }
+
+    .info_block > .email, .info_block > .phone {
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+
+    .info_block > .phone {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    body {
+        zoom: 154%;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    body {
+        zoom: 140%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        zoom: 104%;
+    }
 }
