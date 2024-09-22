@@ -135,7 +135,7 @@ footer > .contact_block > button {
 }
 
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
     }
