@@ -1,7 +1,7 @@
 @import "styles/fonts.css";
 @import "styles/header.css";
-@import "styles/vts_content.css";
 @import "styles/lecture_content.css";
+@import "styles/vts_content.css";
 @import "styles/cognitive_method.css";
 @import "styles/method_of_work.css";
 @import "styles/root_page.css";
@@ -26,4 +26,44 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: black;
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #E8DCD5;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top img {
+    width: 20px;
+    height: 20px;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .scroll-to-top {
+        display: flex;
+    }
 }

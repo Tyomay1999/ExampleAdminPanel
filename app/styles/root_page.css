@@ -39,6 +39,10 @@
     flex-direction: column;
 }
 
+.mobile_br{
+    display: none;
+}
+
 .greeting_container > .info_container > .info_box > h1 {
     font-family: Almoni, sans-serif;
     font-size: 34px;
@@ -109,9 +113,99 @@
     text-align: center;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
+
+    body:has(.greeting_container) {
+        zoom: 154%;
+    }
+
     .greeting_container {
-        display: flex;
         flex-direction: column;
+    }
+
+    .greeting_container > .image_box,
+    .greeting_container > .info_container {
+        width: 100%;
+    }
+    .greeting_container > .image_box{
+        height: 213px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .greeting_container > .info_container {
+        direction: rtl;
+        padding: 30px 30px 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .greeting_container > .info_container > .info_box{
+        align-items: center;
+    }
+
+    .mobile_br{
+        display: block;
+    }
+
+    .greeting_container > .info_container > .info_box > h1 {
+        font-size: 21px;
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .greeting_container > .info_container > .info_box > h2 {
+        font-family: Almoni, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #943814;
+    }
+
+    .greeting_container > .info_container > .info_box > .quotes {
+        width: 30px;
+        height: 21px;
+        margin: auto;
+    }
+
+    .greeting_container > .info_container > .info_box > p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mobile_none{
+        display: none;
+    }
+
+    .greeting_container > .info_container > .info_box > div {
+        display: none;
+    }
+
+    .catchphrase{
+        margin: 25px 0;
+        color: #574f4b;
+        font-family: Almoni, sans-serif;
+        line-height: 1.4em;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    body:has(.greeting_container) {
+        zoom: 154%;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    body:has(.greeting_container) {
+        zoom: 140%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body:has(.greeting_container) {
+        zoom: 104%;
     }
 }

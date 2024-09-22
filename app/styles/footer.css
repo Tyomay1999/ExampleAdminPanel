@@ -36,11 +36,13 @@ footer > .navigation_block > ul > li > a {
     font-size: 16px;
     color: #FFFFFF;
 }
+
 footer > .navigation_block > hr {
     width: 100%;
-
 }
-footer > .navigation_block > a {
+
+footer > .navigation_block > a,
+footer > .mobile_block > a {
     text-align: right;
     direction: rtl;
     font-family: Almoni, sans-serif;
@@ -49,15 +51,29 @@ footer > .navigation_block > a {
     color: #FFFFFF;
 }
 
-footer > .navigation_block > a.phone{
+footer > .navigation_block > a.phone,
+footer > .mobile_block > a.phone {
     font-size: 25px;
     font-family: Forum, sans-serif;
 }
 
-footer > .navigation_block > a.text{
+footer > .navigation_block > a.text,
+footer > .mobile_block > a.text {
     font-size: 18px;
 }
 
+footer > .mobile_block {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer > .contact_block > .mobile_hr {
+    display: none;
+}
 
 footer > .contact_block {
     margin: 0 55px;
@@ -76,7 +92,7 @@ footer > .contact_block > h1 {
 
 
 footer > .contact_block > input,
-footer > .contact_block > textarea{
+footer > .contact_block > textarea {
     margin: 10px 0;
     outline: none;
     border: none;
@@ -91,17 +107,17 @@ footer > .contact_block > textarea{
 }
 
 footer > .contact_block > input::placeholder,
-footer > .contact_block > textarea::placeholder{
+footer > .contact_block > textarea::placeholder {
     color: #414141;
 }
 
-footer > .contact_block > textarea{
+footer > .contact_block > textarea {
     height: 110px;
     padding: 10px 9px 3px 10px;
 }
 
 
-footer > .contact_block > input:focus{
+footer > .contact_block > input:focus {
     background: #FFD5BD6A;
 }
 
@@ -112,12 +128,11 @@ footer > .contact_block > button {
     margin: 15px 0 0 calc((100% - 193px) / 2);
     width: 193px;
     height: 49px;
-    background: #F2B827;
+    background: #FFD45A;
     font-size: 17px;
     font-family: Almoni, sans-serif;
     color: #353131;
 }
-
 
 
 @media screen and (max-width: 560px) {
@@ -125,8 +140,62 @@ footer > .contact_block > button {
         flex-direction: column;
     }
 
-    footer > .navigation_block > ul,
-    footer > .navigation_block > hr{
+    footer > .navigation_block {
         display: none;
+    }
+
+    footer > .mobile_block {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    footer > .contact_block {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer > .contact_block > h1 {
+        margin: 30px 0;
+        font-weight: 400;
+    }
+
+    footer > .contact_block > .mobile_hr {
+        display: block;
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+    }
+
+    footer > .contact_block > input,
+    footer > .contact_block > textarea {
+        margin: 5px 0;
+        width: 224px;
+        height: 31px;
+        background: #E0B548;
+    }
+
+    footer > .contact_block > textarea {
+        padding: 12px 9px 3px 10px;
+        height: 56px;
+    }
+
+    footer > .contact_block > button {
+        border-radius: 9px;
+        margin: 15px 0 60px 0;
+        width: 164px;
+        height: 42px;
+    }
+
+    footer > .image_block {
+        padding: 0;
+        width: 100%;
+    }
+
+    footer > .image_block > img {
+        width: 100%;
+        height: 171px;
+        object-fit: cover;
+        object-position: 50% 50%;
     }
 }

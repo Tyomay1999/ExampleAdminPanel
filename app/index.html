@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" sizes="192x192" href="favico.jpg" type="image/jpeg">
     <link rel="shortcut icon" sizes="192x192" href="favico.jpg" type="image/jpeg">
     <link rel="apple-touch-icon" sizes="192x192" href="favico.jpg" type="image/jpeg">
@@ -47,8 +50,25 @@ www.lev-er.com
             <img src="assets/dice.svg" alt="Dice" class="logo">
             <div class="info">
                 <a href="https://www.lev-er.com/" target="_self">אורנת לב - ער</a>
-                <a href="https://www.lev-er.com/" target="_self">לשנות את חוקי המשחק</a>
+                <!--                <a href="https://www.lev-er.com/" target="_self">לשנות את חוקי המשחק</a>-->
+                <img width="148" height="50" src="assets/gulash.png" alt="Gulash">
             </div>
+        </div>
+
+        <div class="burger-icon" id="burger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="menu-modal" id="menu-modal">
+            <ul>
+                <li class="selected" ><a href="index.html">ראשי</a></li>
+                <li><a href="method_of_work.html">שיטת העבודה שלי</a></li>
+                <li><a href="cognitive_method.html">גישה קוגניטיבית</a></li>
+                <li><a href="vts.html">VTS</a></li>
+                <li><a href="lectures.html">הרצאות</a></li>
+            </ul>
         </div>
     </header>
 
@@ -64,13 +84,13 @@ www.lev-er.com
                     כל מה שנדרש זה לשנות את חוקי המשחק.
                 </h1>
                 <br>
-                <br>
+                <br class="mobile_none">
                 <h2>
                     גם אתם יכולים להשתנות, להעצים ולהשביח את יכולות החשיבה וההתנהלות שלכם.
                 </h2>
                 <br>
-                <br>
-                <br>
+                <br class="mobile_none">
+                <br class="mobile_none">
                 <img class="quotes" src="assets/quotes_yellow.svg" alt="quotes">
                 <br>
                 <p>
@@ -80,8 +100,8 @@ www.lev-er.com
                     <br>
                     (אלעד)
                 </p>
-                <br>
-                <br>
+                <br class="mobile_none">
+                <br class="mobile_none">
                 <div>
                     <a href="method_of_work.html">שיטת העבודה שלי</a>
                 </div>
@@ -144,6 +164,11 @@ www.lev-er.com
             <img src="assets/photo_person.webp" alt="person">
             <div class="back_fon"></div>
         </div>
+        <div class="mobile_button">
+            <a href="method_of_work.html">
+                שיטת העבודה שלי
+            </a>
+        </div>
     </div>
 
     <div class="skills_container">
@@ -188,30 +213,31 @@ www.lev-er.com
     <div class="more_info_container">
         <div class="more_info_wrapper">
             <div class="info_box">
-                <img src="assets/quotes_yellow.svg" alt="quotes">
+                <img class="quotes_yellow"  src="assets/quotes_yellow.svg" alt="quotes">
+                <br class="mobile_none">
                 <br>
-                <br>
-                <p>
+                <p class="first">
                     השיעורים עם אורנת עזרו לי לחשוב שונה, להסתכל על הדברים בצורה אחרת ובעיקר לתעל את הדרך והתוצאה של מה שאני עושה.
                 </p>
-                <p>
+                <p class="first">
                     את תרגילי החשיבה והמפגשים שלנו אורנת התאימה במיוחד בשבילי; היא הבינה איפה אני יותר חלשה ויכולה להתחזק.
                 </p>
-                <p>
+                <p class="first">
                     ביום-יום שלי שמתי לב שאני מבצעת פעולות וחושבת בצורה הרבה יותר אפקטיבית.
                 </p>
-                <p>
+                <p class="first">
                     המפגשים עם אורנת היו לא רק מלמדים אלא גם מהנים. קבלתי יחס אישי והייתה לי תחושה שחשוב לה שאני ארגיש את השינוי והתהליך.
                 </p>
-                <p>
+                <p class="first">
                     אני ממליצה על התהליך הזה. אני מאמינה שהוא יכול לעזור לכל אחד להשתפר.
                 </p>
                 <br>
-                <span>- עדי</span>
+<!--                <span>- עדי</span>-->
+                <img class="typography a" src="assets/type_a.png" alt="- עדי">
             </div>
             <div class="info_box">
-                <img src="assets/quotes_yellow.svg" alt="quotes">
-                <br>
+                <img class="quotes_yellow"  src="assets/quotes_yellow.svg" alt="quotes">
+                <br class="mobile_none">
                 <br>
                 <p>
                     אני בת 23. הגעתי אל אורנת על מנת לשפר ולייעל את יכולות הלמידה שלי לאחר שבמשך שנים התמודדתי עם בעיות קשב וריכוז שהקשו עלי מאד להתמקד בלימודים.
@@ -226,21 +252,27 @@ www.lev-er.com
                     במהלך העבודה המשותפת התגלו חוזקות וקשיים שלא הבחנתי בהם קודם ולכן לא ידעתי להגדיר אותם. ככל שהעמקנו בתהליך, הרגשתי כי העבודה המשותפת מחזקת ומשקמת את דפוסי החשיבה שמועילים לי ללמידה נכונה, כמו תשומת לב לפרטים, גמישות מחשבתית ומיקוד ובו בזמן גם מציפה את דרכי החשיבה הלקויים שמפריעים לי ומעניקה לי כלים לתקן ולשנות. השינוי היה מדהים והרגשתי בו כבר במפגשים הראשונים. הליווי האישי והמקצועי שקיבלתי, גרם לי להרגיש בטוחה לעשות את השינוי.
                 </p>
                 <br>
-                <span>-מיכל</span>
+<!--                <span>-מיכל</span>-->
+                <img class="typography b" src="assets/type_b.png" alt="-מיכל">
             </div>
             <div class="info_box">
-                <img src="assets/quotes_yellow.svg" alt="quotes">
-                <br>
+                <img class="quotes_yellow" src="assets/quotes_yellow.svg" alt="quotes">
+                <br class="mobile_none">
                 <br>
                 <p>
                     אורנת יודעת למצוא פתרונות יצירתיים ליציאה מתוך סיטואציות משבריות שנראות כמו פלונטר. למצא חוזקות ולהגביר אותן, מתוך קשב ודיאלוג. קודם כל, היא ידעה להסביר ולנצח איתי את זה כך שתמיד הייתי יוצא בראש מורם. לתת פרופורציות. אחר כך, היא ידעה לבנות איתי תכנית ברורה, תוך כדי שיחה, לארגן זמן וחיבורים.
                 </p>
                 <br>
-                <span>-נועם</span>
+<!--                <span>-נועם</span>-->
+                <img class="typography c" src="assets/type_c.png" alt="-נועם">
             </div>
         </div>
     </div>
-    <h2 class="catchphrase">עכשיו תורכם לשנות את חוקי המשחק</h2>
+    <h2 class="catchphrase">
+        עכשיו תורכם לשנות את חוקי
+        <br class="mobile_br">
+        המשחק
+    </h2>
     <footer>
         <div class="navigation_block">
             <ul>
@@ -263,16 +295,33 @@ www.lev-er.com
         </div>
         <div class="contact_block">
             <h1>בואו נתחיל לעבוד</h1>
+            <hr class="mobile_hr">
             <input type="text" placeholder="שם פרטי ומשפחה">
             <input type="email" placeholder="אימייל">
-            <textarea class="message" placeholder="כתבו לי הודעה"></textarea>
+            <textarea class="message" placeholder="כתבו לי הודעה" ></textarea>
             <button>שלחו</button>
-
+        </div>
+        <div class="mobile_block">
+            <a href="mailto:ornat@lev-er.com" target="_self" class="email">
+                ornat@lev-er.com
+            </a>
+            <a href="tel:050-750-4090" class="phone">
+                050-750-4090
+            </a>
+            <a href="mailto:ornat@lev-er.com" target="_self" class="text">קליניקה פרטית בכוכב יאיר -
+                צור יגאל</a>
         </div>
         <div class="image_block">
             <img src="assets/dice_footer.webp" alt="dice">
         </div>
     </footer>
+
+    <div class="scroll-to-top" id="scrollToTopBtn">
+        <img src="assets/arrow-up.svg" alt="Scroll to Top">
+    </div>
+
+    <script src="main.js"></script>
+
 </div>
 </body>
 </html>

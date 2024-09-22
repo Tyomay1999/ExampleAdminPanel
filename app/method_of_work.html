@@ -49,8 +49,25 @@ www.lev-er.com
             <img src="assets/dice.svg" alt="Dice" class="logo">
             <div class="info">
                 <a href="https://www.lev-er.com/" target="_self">אורנת לב - ער</a>
-                <a href="https://www.lev-er.com/" target="_self">לשנות את חוקי המשחק</a>
+                <!--                <a href="https://www.lev-er.com/" target="_self">לשנות את חוקי המשחק</a>-->
+                <img width="148" height="50" src="assets/gulash.png" alt="Gulash">
             </div>
+        </div>
+
+        <div class="burger-icon" id="burger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="menu-modal" id="menu-modal">
+            <ul>
+                <li><a href="index.html">ראשי</a></li>
+                <li class="selected" ><a href="method_of_work.html">שיטת העבודה שלי</a></li>
+                <li><a href="cognitive_method.html">גישה קוגניטיבית</a></li>
+                <li><a href="vts.html">VTS</a></li>
+                <li><a href="lectures.html">הרצאות</a></li>
+            </ul>
         </div>
     </header>
 
@@ -105,9 +122,9 @@ www.lev-er.com
                        <li>צורך בהעצמה ובמסוגלות</li>
                    </ul>
                    <br>
-                   <br>
-                   <br>
-                   <br>
+                   <br class="desktop_br">
+                   <br class="desktop_br">
+                   <br class="desktop_br">
                </div>
                <div class="image_box">
                    <div class="back_fon">
@@ -154,6 +171,8 @@ www.lev-er.com
                                 לפני שפגשתי את אורנת לא חייתי את החיים, שרדתי אותם. מאז שפגשתי את אורנת, התחלתי להסתכל קדימה ולצמוח
                             </span>
                         </p>
+                        <br>
+                        <p class="mobile_text">(אלעד)</p>
                     </div>
                 </div>
             </div>
@@ -182,16 +201,33 @@ www.lev-er.com
         </div>
         <div class="contact_block">
             <h1>בואו נתחיל לעבוד</h1>
+            <hr class="mobile_hr">
             <input type="text" placeholder="שם פרטי ומשפחה">
             <input type="email" placeholder="אימייל">
             <textarea class="message" placeholder="כתבו לי הודעה" ></textarea>
             <button>שלחו</button>
-
+        </div>
+        <div class="mobile_block">
+            <a href="mailto:ornat@lev-er.com" target="_self" class="email">
+                ornat@lev-er.com
+            </a>
+            <a href="tel:050-750-4090" class="phone">
+                050-750-4090
+            </a>
+            <a href="mailto:ornat@lev-er.com" target="_self" class="text">קליניקה פרטית בכוכב יאיר -
+                צור יגאל</a>
         </div>
         <div class="image_block">
             <img src="assets/dice_footer.webp" alt="dice">
         </div>
     </footer>
+
+    <div class="scroll-to-top" id="scrollToTopBtn">
+        <img src="assets/arrow-up.svg" alt="Scroll to Top">
+    </div>
+
+    <script src="main.js"></script>
+
 </div>
 </body>
 </html>

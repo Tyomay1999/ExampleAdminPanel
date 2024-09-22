@@ -41,7 +41,7 @@
     color: #943814;
 }
 
-.cognitive_method_content > .image_box{
+.cognitive_method_content > .image_box {
     position: relative;
     width: 477px;
     height: 563px;
@@ -72,6 +72,7 @@
     z-index: 1;
     width: 100%;
     height: 100%;
+    object-position: 50% 50%;
     object-fit: cover;
 }
 
@@ -95,7 +96,16 @@
     letter-spacing: normal;
 }
 
-@media screen and (max-width: 560px) {
+.cognitive_method_more_block > .mobile_empty_block {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    body:has(.cognitive_method_container) {
+        zoom: 154%;
+    }
+
     .cognitive_method_container {
         padding: 0;
         display: flex;
@@ -114,12 +124,6 @@
         background: #FFFFFF;
     }
 
-    .cognitive_method_content > .image_box{
-        position: relative;
-        width: 255px;
-        height: 255px;
-        object-position: 50% 50%;
-    }
 
     .cognitive_method_content > .image_box > .back_fon {
         position: absolute;
@@ -130,4 +134,77 @@
         background: #F4EFEB;
     }
 
+    .cognitive_method_content > .info_box > p,
+    .cognitive_method_content > .info_box > p > span {
+        font-size: 16px;
+        color: #22495a;
+    }
+
+    .cognitive_method_content > .image_box {
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .cognitive_method_content > .image_box > img {
+        /*position: relative;*/
+        width: 255px;
+        height: 255px;
+    }
+
+    .cognitive_method_content > .image_box > .back_fon {
+        width: 237px;
+        height: 298px;
+        left: -20px;
+        top: -20px;
+        bottom: auto;
+    }
+
+    .cognitive_method_content > .image_box > .back_fon > span {
+        left: 20px;
+        bottom: 7px;
+    }
+
+    .cognitive_method_more_block {
+        position: relative;
+        padding: 50px 30px 10px 30px;
+        justify-content: flex-start;
+        background: transparent;
+    }
+
+    .cognitive_method_more_block > .mobile_empty_block {
+        position: absolute;
+        width: calc(100% - 60px);
+        top: 20px;
+        left: 30px;
+        height: 50px;
+        display: block;
+        background: #988C86;
+    }
+
+    .cognitive_method_more_block > p {
+        position: relative;
+        z-index: 2;
+        font-size: 22px;
+        text-align: start;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    body:has(.cognitive_method_container) {
+        zoom: 154%;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    body:has(.cognitive_method_container) {
+        zoom: 140%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body:has(.cognitive_method_container) {
+        zoom: 104%;
+    }
 }

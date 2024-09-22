@@ -1,4 +1,5 @@
 header {
+    position: relative;
     width: 100%;
     height: 177px;
     display: flex;
@@ -8,7 +9,7 @@ header {
 }
 
 .navigation {
-    margin: 83px 0 25px calc((100% - 980px)* 0.5);;
+    margin: 83px 0 25px calc((100% - 980px) * 0.5);;
     display: flex;
 }
 
@@ -33,7 +34,6 @@ header {
 }
 
 .logo_block {
-
     margin: 44px 0 44px 40px;
     display: flex;
 }
@@ -77,19 +77,19 @@ header {
 }
 
 
-.head:has(.vts_head){
+.head:has(.vts_head) {
     flex-direction: column;
     min-height: 123px;
     height: auto;
     padding-top: 20px;
 }
 
-.head:has(.cognitive_method_head, .cognitive_method_head_s){
+.head:has(.cognitive_method_head, .cognitive_method_head_s) {
     flex-direction: column;
 }
 
 
-.head > .lecture_head  {
+.head > .lecture_head {
     font-size: 42px;
     font-family: Almoni, sans-serif;
     font-weight: 100;
@@ -136,7 +136,7 @@ header {
     font-weight: 400;
 }
 
-.head > .cognitive_method_head_s{
+.head > .cognitive_method_head_s {
     color: #414141;
     font-size: 38px;
 }
@@ -154,19 +154,170 @@ header {
     color: #414141;
 }
 
+/*MENU*/
+.burger-icon {
+    position: fixed;
+    cursor: pointer;
+    top: 50px;
+    zoom: 100%;
+    right: 30px;
+    width: 22px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 56;
+}
+
+.line {
+    transition: all 0.3s ease-in-out;
+    background-color: #574f4b;
+    border-radius: 2px;
+    height: 2px;
+    width: 100%;
+}
+
+.burger-icon.open > .line:first-child{
+    transform: rotate(45deg);
+}
+.burger-icon.open > .line:nth-child(2){
+    display: none;
+}
+.burger-icon.open > .line:last-child{
+    position: relative;
+    top: -18px;
+    transform: rotate(-45deg);
+}
+
+/* Modal */
+.menu-modal {
+    position: fixed;
+    direction: rtl;
+    top: 0;
+    right: -105%;
+    width: 100%;
+    height: 100vh;
+    background-color: #F4EFEB;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    display: none;
+    flex-direction: column;
+    padding: 85px 25px;
+    z-index: 6;
+}
+
+.menu-modal.open {
+    right: 0;
+}
+
+.menu-modal > ul {
+    list-style-type: none;
+}
+
+.menu-modal > ul > li {
+
+}
+.menu-modal > ul > li:hover,
+.menu-modal > ul > li.selected{
+    background: #837C78;
+}
+
+.menu-modal > ul > li:hover > a,
+.menu-modal > ul > li.selected > a {
+    color: #D8C7BD;
+}
+.menu-modal > ul > li > a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-family: Almoni, sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #414141;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
     .navigation {
         display: none;
     }
 
+    .logo_block {
+        margin: 0 35px 0 0;
+        display: flex;
+    }
+
+    .logo_block > .logo {
+        margin-right: 5px;
+        width: 52px;
+        height: 43px;
+        object-fit: cover;
+    }
+
+    .info > a:first-child {
+        font-size: 33px;
+    }
+
     .head {
         height: 64px;
     }
-    .head > .lecture_head  {
-        font-size: 24px;
-        font-family: Almoni, sans-serif;
-        font-weight: 100;
-        color: #574f4b;
-        text-align: center;
+
+    .head:has(.vts_head) {
+        height: 133px;
+        padding-top: 0;
     }
+
+    .head > .vts_head {
+        font-size: 18px;
+    }
+
+    .head > .vts_head > span {
+        font-size: 24px;
+    }
+
+    .head > .lecture_head {
+        font-size: 24px;
+        font-weight: 100;
+    }
+
+    .head:has(.cognitive_method_head) {
+        height: 105px;
+        /*padding-top: 0;*/
+    }
+
+    .head:has(.cognitive_method_head_s) {
+        height: 150px;
+        padding: 0 20px;
+        /*padding-top: 0;*/
+    }
+
+    .head > .cognitive_method_head,
+    .head > .cognitive_method_head_s {
+        font-size: 27px;
+    }
+
+    .head > .cognitive_method_head_s {
+        font-size: 28px;
+    }
+
+    .head > .cognitive_method_par,
+    .head > .cognitive_method_par_s {
+        font-size: 19px;
+        line-height: 1.6em;
+    }
+
+    .head > .cognitive_method_par_s {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .burger-icon, .menu-modal{
+        display: flex;
+    }
+
 }

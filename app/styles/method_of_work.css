@@ -146,8 +146,17 @@
     color: #943814;
 }
 
+.mobile_text{
+    display: none;
+}
 
-@media screen and (max-width: 560px) {
+
+@media screen and (max-width: 768px) {
+    body:has(.method_of_work_container) {
+        zoom: 154%;
+    }
+
+
     .method_of_work_wrapper {
         margin: 0;
         width: 100%;
@@ -163,12 +172,12 @@
 
 
     .method_of_work_content > .image_box {
-        /*max-width: 490px;*/
-
-        height: 564px;
-
-        /*display: flex;*/
-        /*align-items: flex-end;*/
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
     }
 
     .method_of_work_content > .image_box > .back_fon {
@@ -178,26 +187,64 @@
 
     .method_of_work_content > .image_box > .back_fon > img {
         position: absolute;
-        left: 30px;
-        bottom: 40px;
-        width: 240px;
-        height: 358px;
+        left: 25px;
+        bottom: 15px;
+        width: 265px;
+        height: 370px;
     }
 
     .method_of_work_more_info {
         flex-direction: column;
     }
-
+    .method_of_work_content > .image_box,
+    .method_of_work_content > .info_box {
+        max-width: 100%;
+        width: 100%;
+    }
     .method_of_work_more_info > .image_box,
     .method_of_work_more_info > .info_box {
+        max-width: 100%;
         width: 100%;
+    }
+
+    .method_of_work_more_info > .info_box {
         padding: 20px;
     }
 
     .method_of_work_more_info > .info_box > .info_box_wrapper {
-        padding: 25px;
+        padding: 0;
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .method_of_work_more_info > .info_box > .info_box_wrapper > .info_box_container {
+        /*max-width: 514px;*/
+        /*width: 100%;*/
+        align-items: center;
+    }
+    .mobile_text{
+        width: 100%;
+        display: block;
+    }
+    .desktop_br{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    body:has(.method_of_work_container) {
+        zoom: 154%;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    body:has(.method_of_work_container) {
+        zoom: 140%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body:has(.method_of_work_container) {
+        zoom: 104%;
     }
 }

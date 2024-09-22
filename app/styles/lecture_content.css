@@ -89,7 +89,7 @@
 
 
 @media screen and (max-width: 768px) {
-    body {
+    body:has(.content_container) {
         zoom: 154%;
     }
 
@@ -117,7 +117,6 @@
     .info_block > .image_background > img {
         top: -30px;
         left: calc((100% - 218px) / 2);
-
         width: 218px;
         height: 327px;
     }
@@ -140,19 +139,19 @@
 }
 
 @media screen and (max-width: 560px) {
-    body {
+    body:has(.content_container) {
         zoom: 154%;
     }
 }
 
 @media screen and (max-width: 519px) {
-    body {
+    body:has(.content_container) {
         zoom: 140%;
     }
 }
 
 @media screen and (max-width: 479px) {
-    body {
+    body:has(.content_container) {
         zoom: 104%;
     }
 }
