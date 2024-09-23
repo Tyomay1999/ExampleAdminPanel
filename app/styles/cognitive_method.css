@@ -100,7 +100,22 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1224px) {
+    .cognitive_method_container {
+        padding: 0 15px;
+    }
+    .cognitive_method_wrapper {
+        padding: 80px 20px 0 16px;
+    }
+    .cognitive_method_content > .image_box {
+        width: 455px;
+    }
+    .cognitive_method_content > .image_box > .back_fon {
+        width: 470px;
+    }
+}
+
+@media screen and (max-width: 680px) {
 
     body:has(.cognitive_method_container) {
         zoom: 154%;

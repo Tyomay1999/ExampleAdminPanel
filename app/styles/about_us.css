@@ -135,7 +135,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 680px) {
 
     .about_us_container > .image_box > .back_fon {
         opacity: 1; /* Initially hidden */

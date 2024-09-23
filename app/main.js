@@ -70,3 +70,34 @@ function animateOnScroll() {
 
 window.addEventListener( 'scroll', animateOnScroll );
 window.addEventListener( 'load', animateOnScroll );
+
+
+// Display
+
+document.addEventListener( "DOMContentLoaded", function () {
+    if ( window.innerWidth < 560 || window.innerWidth < 680 ) {
+        document.body.style.zoom = '154%';
+    }
+    if ( window.innerWidth < 560 ) {
+        document.body.style.zoom = '154%';
+    }
+    if ( window.innerWidth < 519 ) {
+        document.body.style.zoom = '140%';
+    }
+    if ( window.innerWidth < 479 ) {
+        document.body.style.zoom = '104%';
+    }
+} );
+
+
+//Parallax
+
+window.addEventListener('scroll', function() {
+    const parallax = document.querySelector('.parallax_effect');
+    const parallax_tile = document.querySelector('.parallax_effect_tile');
+    let scrollPosition = window.pageYOffset;
+
+    parallax.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+    parallax_tile.style.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
+});
+

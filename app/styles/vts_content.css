@@ -45,8 +45,14 @@
     color: #414141;
 }
 
-
 @media screen and (max-width: 768px) {
+    body:has(.vts_content_container) {
+        zoom: 80%;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
     body:has(.vts_content_container) {
         zoom: 154%;
     }
@@ -86,8 +92,8 @@
     }
 }
 
-/*@media screen and (max-width: 479px) {*/
-/*    body {*/
-/*        zoom: 104%;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 479px) {
+    body:has(.vts_content_container){
+        zoom: 104%;
+    }
+}
