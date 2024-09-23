@@ -14,7 +14,7 @@
     width: 50%;
 }
 
-.greeting_container > .image_box{
+.greeting_container > .image_box {
     background-image: url('../assets/dice_backgroun.webp'); /* Replace this with your local image path or a hosted image */
     background-attachment: fixed;
     background-position: center;
@@ -39,7 +39,7 @@
     flex-direction: column;
 }
 
-.mobile_br{
+.mobile_br {
     display: none;
 }
 
@@ -104,7 +104,7 @@
     color: #FFFFFF;
 }
 
-.catchphrase{
+.catchphrase {
     margin: 50px 0;
     color: #574f4b;
     font-family: Almoni, sans-serif;
@@ -127,7 +127,8 @@
     .greeting_container > .info_container {
         width: 100%;
     }
-    .greeting_container > .image_box{
+
+    .greeting_container > .image_box {
         height: 213px;
         object-fit: cover;
         object-position: 50% 50%;
@@ -141,11 +142,11 @@
         justify-content: center;
     }
 
-    .greeting_container > .info_container > .info_box{
+    .greeting_container > .info_container > .info_box {
         align-items: center;
     }
 
-    .mobile_br{
+    .mobile_br {
         display: block;
     }
 
@@ -173,7 +174,7 @@
         text-align: center;
     }
 
-    .mobile_none{
+    .mobile_none {
         display: none;
     }
 
@@ -181,7 +182,7 @@
         display: none;
     }
 
-    .catchphrase{
+    .catchphrase {
         margin: 25px 0;
         color: #574f4b;
         font-family: Almoni, sans-serif;
@@ -189,6 +190,17 @@
         font-size: 24px;
         font-weight: 400;
         text-align: center;
+    }
+
+    .catchphrase {
+        opacity: 0;
+        transform: translateY(50%);
+        transition: all 1s ease-out;
+    }
+
+    .catchphrase.animate {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

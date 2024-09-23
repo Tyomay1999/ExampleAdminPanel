@@ -23,7 +23,7 @@
     width: 49px;
     height: 35px;
     object-fit: cover;
-    transform: rotateY(180deg) rotateX(180deg);
+    /*transform: rotateY(180deg) rotateX(180deg);*/
 }
 
 .more_info_container > .more_info_wrapper > .info_box > .typography {
@@ -32,7 +32,7 @@
     object-fit: contain;
 }
 
-.more_info_container > .more_info_wrapper > .info_box > p {
+.more_info_container > .more_info_wrapper > .info_box > div > p {
     max-width: 321px;
     font-size: 17px;
     font-family: Almoni, sans-serif;
@@ -42,13 +42,28 @@
     text-align: justify;
 }
 
-.more_info_container > .more_info_wrapper > .info_box > span {
+.more_info_container > .more_info_wrapper > .info_box > div > span {
     font-family: Adler, cursive;
     font-size: 37px;
     line-height: 1.4em;
     font-weight: 400;
     color: #E0B548;
 
+}
+
+.more_info_container > .more_info_wrapper > .info_box > div,
+.more_info_container > .more_info_wrapper > .info_box > .quotes_yellow,
+.more_info_container > .more_info_wrapper > .info_box > .typography {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 1s ease-out;
+}
+
+.more_info_container > .more_info_wrapper > .info_box > div.animate,
+.more_info_container > .more_info_wrapper > .info_box > .quotes_yellow.animate,
+.more_info_container > .more_info_wrapper > .info_box > .typography.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -76,18 +91,18 @@
         margin-bottom: 50px;
     }
 
-    .more_info_container > .more_info_wrapper > .info_box > .quotes_yellow  {
+    .more_info_container > .more_info_wrapper > .info_box > .quotes_yellow {
         width: 49px;
         height: 35px;
         object-fit: cover;
-        transform: rotateY(180deg) rotateX(180deg);
     }
-    .more_info_container > .more_info_wrapper > .info_box > p {
+
+    .more_info_container > .more_info_wrapper > .info_box > div > p {
         max-width: 100%;
         color: rgba(34, 73, 90, 1);
     }
 
-    .more_info_container > .more_info_wrapper > .info_box > .first {
+    .more_info_container > .more_info_wrapper > .info_box > div > .first {
         color: rgb(65, 65, 65);
     }
 

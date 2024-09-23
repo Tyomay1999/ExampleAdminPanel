@@ -81,7 +81,7 @@
 }
 
 .about_us_container > .info_box > .content_info > div,
-.about_us_container >  .mobile_button {
+.about_us_container > .mobile_button {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -104,7 +104,50 @@
     display: none;
 }
 
+
+/*Animation*/
+
+.about_us_container > .info_box > .content_info,
+.about_us_container > .info_box > .content_info > div,
+.about_us_container > .mobile_button {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 1s ease-out;
+}
+
+.about_us_container > .info_box > .content_info.animate,
+.about_us_container > .info_box > .content_info > div.animate,
+.about_us_container > .mobile_button.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.about_us_container > .image_box > .back_fon {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(50%); /* Start off-screen */
+    transition: all 1s ease-out;
+}
+
+.about_us_container > .image_box > .back_fon.animate {
+    opacity: 1;
+    transform: translateX(0); /* Slide in from right */
+}
+
+
 @media screen and (max-width: 768px) {
+
+    .about_us_container > .image_box > .back_fon {
+        opacity: 1; /* Initially hidden */
+        transform: translateX(0); /* Start off-screen */
+        transition: all 1s ease-out;
+    }
+
+    .about_us_container > .image_box > .back_fon.animate {
+        opacity: 1;
+        transform: translateX(0); /* Slide in from right */
+    }
+
     .about_us_container {
         width: 100%;
         display: flex;
@@ -173,9 +216,23 @@
         align-items: center;
         justify-content: center;
     }
+
     .about_us_container > .mobile_button > a {
         width: 200px;
         height: 48px;
         font-size: 17px;
+    }
+
+    .about_us_container > .image_box > img,
+    .about_us_container > .info_box > .head_line {
+        opacity: 0;
+        transform: translateY(50%);
+        transition: all 1s ease-out;
+    }
+
+    .about_us_container > .image_box > img.animate,
+    .about_us_container > .info_box > .head_line.animate {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

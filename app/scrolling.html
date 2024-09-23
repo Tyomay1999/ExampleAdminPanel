@@ -72,12 +72,70 @@
         <h1>Scroll to Animate Text</h1>
         <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
     </div>
+
+    <div class="box" data-animation="slide-right"></div>
+
+    <!-- Text with animation (bottom to top) -->
+    <div class="text-section" data-animation="slide-up">
+        <h1>Scroll to Animate Text</h1>
+        <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
+    </div>
+    <div class="box" data-animation="slide-right"></div>
+
+    <!-- Text with animation (bottom to top) -->
+    <div class="text-section" data-animation="slide-up">
+        <h1>Scroll to Animate Text</h1>
+        <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
+    </div>
+    <div class="box" data-animation="slide-right"></div>
+
+    <!-- Text with animation (bottom to top) -->
+    <div class="text-section" data-animation="slide-up">
+        <h1>Scroll to Animate Text</h1>
+        <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
+    </div>
+    <div class="box" data-animation="slide-right"></div>
+
+    <!-- Text with animation (bottom to top) -->
+    <div class="text-section" data-animation="slide-up">
+        <h1>Scroll to Animate Text</h1>
+        <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
+    </div>
+    <div class="box" data-animation="slide-right"></div>
+
+    <!-- Text with animation (bottom to top) -->
+    <div class="text-section" data-animation="slide-up">
+        <h1>Scroll to Animate Text</h1>
+        <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
+    </div>
+    <div class="box" data-animation="slide-right"></div>
+
+    <!-- Text with animation (bottom to top) -->
+    <div class="text-section" data-animation="slide-up">
+        <h1>Scroll to Animate Text</h1>
+        <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
+    </div>
+    <div class="box" data-animation="slide-right"></div>
+
+    <!-- Text with animation (bottom to top) -->
+    <div class="text-section" data-animation="slide-up">
+        <h1>Scroll to Animate Text</h1>
+        <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
+    </div>
+    <div class="box" data-animation="slide-right"></div>
+
+    <!-- Text with animation (bottom to top) -->
+    <div class="text-section" data-animation="slide-up">
+        <h1>Scroll to Animate Text</h1>
+        <p>This text will appear from the bottom when scrolled into view. It's great for adding dynamic effects to your website content.</p>
+    </div>
 </div>
 
 <script >
     // Function to check if element is in viewport
     function isInViewport(el) {
         const rect = el.getBoundingClientRect();
+
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -91,6 +149,7 @@
         const elements = document.querySelectorAll('[data-animation]');
 
         elements.forEach(element => {
+            console.log(element.className)
             if (isInViewport(element)) {
                 element.classList.add('animate');
             }
