@@ -9,7 +9,7 @@ header {
 }
 
 .navigation {
-    margin: 83px 0 25px calc((100% - 980px) * 0.5);;
+    margin: 83px 0 25px calc((100% - 980px) * 0.5);
     display: flex;
 }
 
@@ -34,7 +34,7 @@ header {
 }
 
 .logo_block {
-    margin: 44px 0 44px 40px;
+    margin: 45px 0 0 40px;
     display: flex;
 }
 

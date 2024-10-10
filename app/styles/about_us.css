@@ -109,15 +109,17 @@
 
 .about_us_container > .info_box > .content_info,
 .about_us_container > .info_box > .content_info > div,
+.about_us_container > .info_box > .head_line > h1,
 .about_us_container > .mobile_button {
     opacity: 0;
     transform: translateY(50%);
-    transition: all 1s ease-out;
+    transition: all .8s ease-out;
 }
 
 .about_us_container > .info_box > .content_info.animate,
 .about_us_container > .info_box > .content_info > div.animate,
-.about_us_container > .mobile_button.animate {
+.about_us_container > .mobile_button.animate,
+.about_us_container > .info_box > .head_line > h1.animate{
     opacity: 1;
     transform: translateY(0);
 }

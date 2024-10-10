@@ -55,7 +55,7 @@
 .more_info_container > .more_info_wrapper > .info_box > .quotes_yellow{
     opacity: 0;
     transform: translateY(50%);
-    transition: all 1s ease-out;
+    transition: all .5s ease-out;
 }
 
 .more_info_container > .more_info_wrapper > .info_box > div.animate,
