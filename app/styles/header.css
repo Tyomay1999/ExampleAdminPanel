@@ -168,6 +168,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     z-index: 56;
+    transition: opacity .5s;
 }
 
 .line {

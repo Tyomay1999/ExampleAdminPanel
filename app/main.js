@@ -17,11 +17,13 @@ let hideTimeout = null;
 function showButton() {
     scrollToTopBtn.classList.add( 'show' );
     scrollToTopBtn.classList.remove( 'hide' );
+    burgerIcon.style.setProperty( "opacity", "1" )
 
     if ( hideTimeout ) clearTimeout( hideTimeout );
 
     hideTimeout = setTimeout( () => {
         scrollToTopBtn.classList.add( 'hide' );
+        burgerIcon.style.setProperty( "opacity", "0.5" )
         scrollToTopBtn.classList.remove( 'show' );
     }, 1000 );
 }
@@ -102,12 +104,12 @@ window.addEventListener( 'scroll', function () {
     let scrollPosition = window.pageYOffset;
 
     if ( window.innerWidth > 680 ) {
-        parallax.style.transform = 'translateY(' + ( 320 + ( scrollPosition * 0.5 ) ) + 'px)';
-        parallax_tile.style.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
+        parallax?.style?.transform = 'translateY(' + ( 320 + ( scrollPosition * 0.5 ) ) + 'px)';
+        parallax_tile?.style?.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
 
     } else {
-        parallax.style.transform = 'translateY(' + 0 + 'px)';
-        parallax_tile.style.transform = 'translateY(' + 0 + 'px)';
+        parallax?.style?.transform = 'translateY(' + 0 + 'px)';
+        parallax_tile?.style?.transform = 'translateY(' + 0 + 'px)';
     }
 } );
 
@@ -132,40 +134,3 @@ document.querySelectorAll( '.navigation_s' ).forEach( link => {
     } );
 } );
 
-// const validateEmail = ( email ) => {
-//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     console.log( emailRegex.test( email ), email )
-//     return emailRegex.test( email );
-// }
-//
-//
-// const init_form_logic = () => {
-//     const url = "http://localhost:8000/"
-//
-//     const visitor_name = document.getElementById( "name" ),
-//         visitor_email = document.getElementById( "email" ),
-//         visitor_message = document.getElementById( "message" ),
-//         visitor_submit = document.getElementById( "submit" );
-//
-//     visitor_submit.addEventListener( "click", async ( e ) => {
-//         if ( visitor_name.value.length && validateEmail( visitor_email.value ) && visitor_message.value.length ) {
-//             const fd = new FormData()
-//             fd.append( "name", visitor_name.value )
-//             fd.append( "email", visitor_email.value )
-//             fd.append( "message", visitor_message.value )
-//
-//             const request1 = new Request( url, {
-//                 method: "POST",
-//                 body: JSON.stringify( {
-//                     name: visitor_name.value,
-//                     email: visitor_email.value,
-//                     message: visitor_message.value,
-//                 } ),
-//             } );
-//
-//             const response = await fetch( request1 )
-//             const data = await response.json()
-//         }
-//     } )
-// }
-// init_form_logic()

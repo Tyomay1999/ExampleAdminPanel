@@ -96,10 +96,6 @@
     letter-spacing: normal;
 }
 
-.cognitive_method_more_block > .mobile_empty_block {
-    display: none;
-}
-
 @media screen and (max-width: 1224px) {
     .cognitive_method_container {
         padding: 0 15px;
@@ -184,18 +180,9 @@
         position: relative;
         padding: 50px 30px 10px 30px;
         justify-content: flex-start;
-        background: transparent;
+        /*background: transparent;*/
     }
 
-    .cognitive_method_more_block > .mobile_empty_block {
-        position: absolute;
-        width: calc(100% - 60px);
-        top: 20px;
-        left: 30px;
-        height: 50px;
-        display: block;
-        background: #988C86;
-    }
 
     .cognitive_method_more_block > p {
         position: relative;
