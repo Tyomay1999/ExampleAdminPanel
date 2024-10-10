@@ -2,7 +2,7 @@
 // Get form data
 $name = $_POST['name'];
 $email = $_POST['email'];
-$subject = $_POST['subject'];
+// $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 // Validate email address (optional)
@@ -13,9 +13,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     // Send email (replace with your email sending logic)
     $to = "test_lever@icfn.net"; // Replace with your email address
     $headers = "From: $name <$email>";
-    $subject = "Contact Form Submission: $subject";
+//     $subject = "Contact Form Submission: $subject";
 
-    if (mail($to, $subject, $message, $headers)) {
+//     if (mail($to, $subject, $message, $headers)) {
+    if (mail($to, $message, $headers)) {
         echo "Your message has been sent successfully.";
     } else {
         echo "Failed to send your message.";
