@@ -31,6 +31,10 @@ function showButton() {
 function handleScroll() {
     const currentScrollY = window.scrollY;
 
+    if ( window.scrollY > 150 ) {
+        burgerIcon.style.setProperty( "opacity", "0.5" )
+    }
+
     if ( currentScrollY < lastScrollY ) {
         showButton();
     }
@@ -79,7 +83,9 @@ window.addEventListener( 'load', animateOnScroll );
 document.addEventListener( "DOMContentLoaded", function () {
     if ( window.innerWidth < 680 ) {
         const img = document.getElementById( "dice_footer" )
-        img.src = "./assets/mobile_footer.webp"
+        if ( img ) {
+            img.src = "./assets/mobile_footer.webp"
+        }
     }
     if ( window.innerWidth < 560 || window.innerWidth < 680 ) {
         document.body.style.zoom = '154%';
@@ -103,13 +109,15 @@ window.addEventListener( 'scroll', function () {
     const parallax_tile = document.querySelector( '.parallax_effect_tile' );
     let scrollPosition = window.pageYOffset;
 
-    if ( window.innerWidth > 680 ) {
-        parallax?.style?.transform = 'translateY(' + ( 320 + ( scrollPosition * 0.5 ) ) + 'px)';
-        parallax_tile?.style?.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
+    if ( window.innerWidth > 680 && parallax && parallax_tile ) {
+        parallax.style.transform = 'translateY(' + ( 320 + ( scrollPosition * 0.5 ) ) + 'px)';
+        parallax_tile.style.transform = 'translateY(' + scrollPosition * 0.2 + 'px)';
 
     } else {
-        parallax?.style?.transform = 'translateY(' + 0 + 'px)';
-        parallax_tile?.style?.transform = 'translateY(' + 0 + 'px)';
+        if ( parallax && parallax_tile ) {
+            parallax.style.transform = 'translateY(' + 0 + 'px)';
+            parallax_tile.style.transform = 'translateY(' + 0 + 'px)';
+        }
     }
 } );
 
@@ -133,4 +141,3 @@ document.querySelectorAll( '.navigation_s' ).forEach( link => {
         }, 500 );
     } );
 } );
-
